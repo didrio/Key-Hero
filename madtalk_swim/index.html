@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Key Hero</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+<body>
+	<div class="points"></div>
+	<div class="top-space">
+		<span id="main-menu"><a href="../"><< Main Menu</a></span>
+		<span id="score">0</span>
+		<span id="listen-to-more"><a target="_blank" href="https://soundcloud.com/madtalk">Listen to more of Madtalk</a></span>
+	</div>
+<!-- 	<div class="score-container">
+		<span id="score">0</span>
+	</div> -->
+
+	<div id="myModal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <span class="close">&times;</span>
+	      <br /><br />
+	    </div>
+	    <div class="modal-body">
+	      <h1>Loading Song...</h1>
+	    </div>
+	    <div class="modal-footer">
+	    	<br /><br />
+	    </div>
+	  </div>
+	</div>
+
+	<div class="note-container">
+		<div class="note-column column-1"></div>
+		<div class="note-column column-2"></div>
+		<div class="note-column column-3"></div>
+		<div class="column-divider">
+			<div class="multiplier-circle x10">x10</div>
+			<div class="multiplier-circle x5">x5</div>
+			<div class="multiplier-circle x4">x4</div>
+			<div class="multiplier-circle x3">x3</div>
+			<div class="multiplier-circle x2">x2</div>
+		</div>
+		<div class="note-column column-4"></div>
+		<div class="note-column column-5"></div>
+		<div class="note-column column-6"></div>
+	</div>
+	<div class="key-container">
+		<div class="key key-1">Q</div>
+		<div class="key key-2">W</div>
+		<div class="key key-3">E</div>
+		<div class="column-divider-bottom"></div>
+		<div class="key key-4">I</div>
+		<div class="key key-5">O</div>
+		<div class="key key-6">P</div>
+	</div>
+<script type="text/javascript" src="./song.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
